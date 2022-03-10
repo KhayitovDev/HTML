@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="traffic.css">
+    <script src="light.js"></script>
+</head>
+<body>
+    <style>
+
+* {
+    padding: 0%;
+    margin:0%;
+    box-sizing:border-box;
+}
+
+body{
+    overflow: hidden;
+    background: black;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 165px;
+    height: 485px;
+    background: black;
+    position: relative;
+    border: 5px solid grey;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+
+
+.red {
+    width: 145px;
+    height: 145px;
+    background: red;
+    border-radius: 100%;
+    border: 5px solid black; 
+    border-bottom: 3px solid white;
+    border-top: 3px solid white;
+
+   
+}
+
+.red1 {
+    width: 145px;
+    height: 145px;
+    background: red;
+    border-radius: 100%;
+    border: 5px solid black;
+    border-bottom: 3px solid white;
+    border-top: 3px solid white;
+    margin-top: 10px;
+    box-shadow: 0 0 5px red, 0 0 25px red, 0 0 50px red, 0 0 75px red;
+}
+
+
+
+.yellow {
+    width: 145px;
+    height: 145px;
+    background: yellow;
+    border-radius: 100%;
+    border: 5px solid black; 
+    border-bottom: 3px solid white;
+    border-top: 3px solid white;
+   
+   
+}
+
+
+.yellow1 {
+    width: 145px;
+    height: 145px;
+    background: yellow;
+    border-radius: 100%;
+    border: 5px solid black; 
+    border-bottom: 3px solid white;
+    border-top: 3px solid white;
+    margin-top: 15px;
+    box-shadow: 0 0 5px yellow, 0 0 25px yellow, 0 0 50px yellow, 0 0 200px yellow;
+}
+
+
+.green {
+    width: 145px;
+    height: 145px;
+    background: green;
+    border-radius: 100%;
+    border: 5px solid black; 
+    border-bottom: 3px solid white;
+    border-top: 3px solid white;
+    margin-top: 10px;
+   
+}
+
+
+.green1 {
+    width: 145px;
+    height: 145px;
+    background: green;
+    border-radius: 100%;
+    border: 5px solid black;
+    border-bottom: 3px solid white;
+    border-top: 3px solid white;
+    margin-top: 15px;
+    box-shadow: 0 0 5px yellow, 0 0 25px yellow, 0 0 50px yellow, 0 0 200px yellow;
+}
+
+
+button {
+    padding: 10px 12px;
+    display: inline;
+    justify-content: center;
+    min-width: 15vh;
+    min-height: 8vh;
+    color: black;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    background: aqua;
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 20px;
+    cursor: pointer;
+}
+    </style>
+
+    <button onclick="turnOn (turnOn)">Turn On</button>
+    <div class="box">
+
+        <div class="red">
+
+        </div>
+
+        <div class="yellow">
+
+        </div>
+
+        <div class="green">
+
+        </div>
+
+         
+    </div>
+
+    <br><br>
+    
+    <button onclick="turnOff( turnOff)">Turn Off</button>
+
+    <script>
+        function turnOn () {
+    document.getElementsByTagName('div')[1].setAttribute('class','red1');
+    document.getElementsByTagName('div')[2].setAttribute('class','yellow1');
+    document.getElementsByTagName('div')[3].setAttribute('class','green1');
+}
+
+function turnOff () {
+    document.getElementsByTagName('div')[1].setAttribute('class','red');
+    document.getElementsByTagName('div')[2].setAttribute('class','yellow');
+    document.getElementsByTagName('div')[3].setAttribute('class','green');
+
+}
+    </script>
+
+
+
+    
+</body>
+</html>
